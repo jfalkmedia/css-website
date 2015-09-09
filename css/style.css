@@ -10,10 +10,14 @@ h1, h2{
 	font-family: 'PT Serif Caption', serif;
 }
 
+.btn{
+	font-size: 1.2em;
+}
+
 /* COLORS
 ========================= */
 
-.contact-block, footer,
+footer,
 .footer-nav li a,
 .footer-nav a {
 	color: rgba(255,255,255,0.9);
@@ -25,7 +29,8 @@ footer {
 }
 
 .contact-block{
-	background-color: #233f87
+	background-color: #233f87;
+	color: #FFF;
 }
 
 .testimonials-block {
@@ -39,13 +44,27 @@ footer {
 .info-block .btn-default{
 	background: #FFF;
 	color: #108279;
-	border: none;
+	border: 1px solid #FFF;
+}
+
+.info-block .btn-default:hover{
+	background-color: rgba(255,255,255,0.1);
+
+	transition: all 0.3s ease;
+}
+
+.welcome .btn-default:hover{
+	background-color: #233f87;
+	color: #FFF;
+	border: 1px solid #FFF;
+	transition: all 0.3s ease;
 }
 
 .info-block img{
 	border: 3px solid #FFF;
 	box-shadow: 0 1px 50px rgba(255,255,255,0.4);
 }
+
 
 
 /* LAYOUT
@@ -207,15 +226,36 @@ footer{
 .navbar{
 		border-top: 10px solid #108279;
 		border-bottom: none;
+		font-size: 1.2em;		
 }
 
 .main-menu{
 	padding-top: 80px;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+	background: #233f87;
+	color: #FFF;
+}
 
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: #2E52AF;
+    color: #FFF;
+    transition: all 0.2s ease;
+}
+
+.navbar-social li{
+	display: inline;
+	list-style-type: none;
+}
+
+.footer-nav{
+	margin: 0;
+	padding: 0;
+}
 
 .footer-nav li{
+	display: inline;	
 	list-style: none;
 	margin-left: 20px;
 	padding-right: 20px;
@@ -224,7 +264,7 @@ footer{
 
 .footer-nav li:last-child{
 	border: none;
-	padding-right: 0;
+
 }
 
 /* JUMBOTRON
@@ -269,8 +309,6 @@ footer{
 }
 
 
-
-
 /* LOGOS & ICONS
 ========================= */
 
@@ -282,4 +320,34 @@ footer{
 	overflow: hidden;
 	background: url('../img/css-logo.png') no-repeat;
 	background-size: 100%;
+}
+
+/* FORMS
+========================= */
+
+.submit-block{
+	margin-top: 25px;
+}
+
+input[type="text"]{
+	border: 2px solid #cecece;
+	border-radius: 5px;
+	margin: 20px 25px 10px 0;
+	padding: 5px;
+	color: #666;
+}
+
+.contact-us input[type="text"]:nth-child(3){
+	margin-right: 0 !important;
+}
+
+input[type="submit"]{
+	text-transform: uppercase;
+	font-size:1.3em;
+}
+
+input[type="submit"]:hover{
+	background-color: rgba(255,255,255,0.9);
+	color: #233f87;
+	transition: all 0.3s ease;
 }
