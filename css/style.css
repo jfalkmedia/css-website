@@ -14,15 +14,19 @@ h1, h2{
 	font-size: 1.2em;
 }
 
+
 /* COLORS
 ========================= */
 
 footer,
 .footer-nav li a,
-.footer-nav a {
+.footer-nav a,
+.contact-block a {
 	color: rgba(255,255,255,0.9);
 }
-
+.contact-block a:hover{
+	color: #fff;
+}
 
 footer {
 	background-color: #122147;
