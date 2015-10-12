@@ -36,38 +36,13 @@
 
       <!-- Navbar -->
       <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div id="top-content">
-            <div class="row">
-            <div class="col-md-12">
-            <div class="navbar-social pull-right">
-             <ul>
-               <!-- <li class="glyphicon glyphicon-envelope"></li> -->
-               <li class="glyphicon glyphicon-shopping-cart"></li>
-               <li> NPRInc.com</li>
-             </ul>
-            </div>   
-            </div>
-          </div>     
+        <div class="container"> 
 
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand main-logo pull-left" href="#">Comprehensive School Solutions</a>
+          <div class="logos">
+            <a class="navbar-brand main-logo" href="http://css.nprinc.com">Comprehensive School Solutions</a>
+
           </div>      
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav main-menu pull-right ">
-              <li class="active"><a href="#">About Us</a></li>
-              <li><a href="#about">Our Presenters</a></li>
-              <li><a href="#contact">Our Services</a></li>
-              <li><a href="#contact">Topical Areas</a></li>  
-              <li><a href="#contact">Inquiries &amp; Bookings</a></li>                      
-            </ul>
-          </div><!--/.nav-collapse -->   
+
          
         </div>
       </nav><!-- end navbar -->
@@ -89,7 +64,6 @@
             <div class="col-md-12">
 
               <p>Comprehensive School Solutions offers affordable, customizable professional training/consultation delivered by world-class authors, researchers, and presenters in the field of education. Comprehensive School Solutions is focused on providing schools with support over time to ensure that they are able to immediately use the tools and put into practice the strategies presented in training sessions/workshops.</p>
-              <p><a class="btn btn-default" href="#" role="button">Learn More</a></p>
             </div>
           </div>
 
@@ -107,8 +81,8 @@
               <div id="presenters-info" class="text-center">
                 <img src="img/marilyn-friend.jpg" alt="Marilyn Friend" class="img-responsive img-circle">           
                 <h2>Our Presenters</h2>
-                <p>Our world-class presenters have expertise in the areas of Grading &amp; Reporting, Inclusion, Instruction, RTI / MTSS, English Language Learners, Social Emotional Learning &amp; more! </p>
-                <p><a class="btn btn-default" href="#" role="button">Learn More</a></p>
+                <p>Our world-class presenters have expertise in the areas of Grading &amp; Reporting, Inclusion, Instruction, RTI / MTSS, English Language Learners, Social Emotional Learning &amp; more! Search for upcoming events or products by presenter.</p>
+                <p><a class="btn btn-default" href="presenters.html" role="button">Learn More</a></p>
               </div>
             </div>
           </div>
@@ -117,8 +91,8 @@
               <div id="events-info" class="text-center">     
                 <img src="img/css-dates.jpg" alt="Upcoming Events" class="img-responsive img-circle">                   
                 <h2>Upcoming Events</h2>
-                <p>Our world-class presenters have expertise in the areas of Grading &amp; Reporting, Inclusion, Instruction, RTI / MTSS, English Language Learners, Social Emotional Learning &amp; more!  </p>
-                <p><a class="btn btn-default" href="#" role="button">Learn More</a></p>
+                <p>Looking for professional development training or consulting for your school? Click here to browse through our upcoming events. Don't see an event in your area? Contact us today for information and booking inquiries!</p>
+                <p><a class="btn btn-default" href="http://the-cei-css.nprinc.com" target="_blank" role="button">Learn More</a></p>
               </div>
               </div>
             </div>
@@ -127,8 +101,8 @@
               <div id="shop-info" class="text-center">  
                 <img src="img/npr-store.jpg" alt="Shop Online at NPR, Inc" class="img-responsive img-circle">                   
                 <h2>Shop Online</h2>
-                <p>Our world-class presenters have expertise in the areas of Grading &amp; Reporting, Inclusion, Instruction, RTI / MTSS, English Language Learners, Social Emotional Learning &amp; more! </p>
-                <p><a class="btn btn-default" href="#" role="button">Learn More</a></p>
+                <p>NPR, Inc is the educator's choice for classroom &amp; professional development resources. Browse books, DVDs, and reference guides on a variety of topics including Co-Teaching, Inclusion, RTI, English Language Learners, Social Emotional Learning &amp; more! </p>
+                <p><a class="btn btn-default" href="http://www.nprinc.com" target="_blank" role="button">Learn More</a></p>
               </div>
             </div>
           </div>
@@ -166,20 +140,7 @@
 
       </div>
 
-      <div class="testimonials-block">
-        <div class="container">
-          <div class="row">
-                <h2>Testimonials</h2>
-              <div class="col-md-12">
 
-                <p class="testimonial">Lorem ipsum dolor sit amet, ex fastidii pertinacia his, nostro quaerendum mel ex. Mea probo facer utinam te. Idque ubique accusam id ius. Altera essent oportere ex quo, no munere vituperatoribus per.</p>
-                <p class="testimonial-name">- Name, School, Etc</p>
-              </div>
-
-          </div>
-
-        </div>
-      </div>
       
       <div class="contact-block">
           <div class="container">
@@ -187,11 +148,11 @@
             <div class="row">
               <div class="col-md-12">
               <h2>Contact Us</h2>
-              <p>For inquiries, or booking requests, please fill out the form below.</p>
-              <form name="contact" id="contact" class="contact-us">
-                <input type="text" name="name" placeholder="Name">
-                <input type="text" name="email" placeholder="Email">
-                <input type="text" name="phone" placeholder="(555) 555-5555">
+              <p>For inquiries, or booking requests, please call 1-800-453-7461, email jcasbarro@nprinc.com, or fill out the form below.</p>
+              <form action="contact-processor.php" method="post" name="contact" id="contact" class="contact-us">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="555-555-5555" pattern="^\d{3}-\d{3}-\d{4}$" required>
                 <div class="submit-block">
                   <input type="submit" name="submit" class="btn btn-default">
                 </div>
@@ -205,14 +166,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <ul class="footer-nav">
-                <li class="active"><a href="#">About Us</a></li>
-                <li><a href="#about">Our Presenters</a></li>
-                <li><a href="#contact">Our Services</a></li>
-                <li><a href="#contact">Topical Areas</a></li>  
-                <li><a href="#contact">Inquiries &amp; Bookings</a></li>                      
-              </ul>
-              <p>&copy; Company 2014</p>
+
+              <p>&copy; 2015 Comprehensive School Solutions</p>
             </div>
           </div>
         </div>

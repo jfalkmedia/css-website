@@ -278,6 +278,13 @@ footer{
 	min-height: 500px;
 
 } 
+.jumbotron-header{
+	background: url('../img/jumbotron-bg2.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	height:100%;
+	min-height: 200px;	
+} 
 /* .jumbotron{
 	background: url('../img/jumbotron-bg2.jpg') no-repeat;
 	min-height: 100%;
@@ -292,14 +299,19 @@ footer{
     position: relative;
     top: 245px;
 }
-.jumbotron h1{
+.jumbotron h1, .jumbotron-header h1{
 	color: #fff;
 	line-height: 1.5em;
 	text-align: right;
-	font-size: 45px;
-
 }
-.jumbotron h1 span.jumbo-title{
+.jumbotron h1{
+	font-size: 45px;
+}
+.jumbotron-header h1{
+	font-size: 35px;
+}
+
+.jumbotron h1 span.jumbo-title, .jumbotron-header h1 span.jumbo-title{
 	background-color: rgba(29,124,113,0.8);
 	padding: 0 40px 5px 30px;
 }
@@ -311,11 +323,14 @@ footer{
 
 /* LOGOS & ICONS
 ========================= */
-
+.logos{
+	width: 208px;
+	margin: auto auto;
+}
 .main-logo {
 	width: 235px;
 	height: 140px;
-	text-indent: 100%;
+	text-indent: 120%;
 	white-space: nowrap;
 	overflow: hidden;
 	background: url('../img/css-logo.png') no-repeat;
@@ -329,7 +344,9 @@ footer{
 	margin-top: 25px;
 }
 
-input[type="text"]{
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
 	border: 2px solid #cecece;
 	border-radius: 5px;
 	margin: 20px 25px 10px 0;
@@ -349,5 +366,40 @@ input[type="submit"]{
 input[type="submit"]:hover{
 	background-color: rgba(255,255,255,0.9);
 	color: #233f87;
+	transition: all 0.4s ease;
+}
+
+/* PRESENTERS PAGE
+============================ */
+
+.presenter-row{
+	margin-top: 5%;
+}
+
+.presenters-buttons .btn-default{
+	border: 1px solid #233f87;
+	font-size: 0.9em;
+}
+
+.presenters-buttons .btn-default:hover{
+	background-color: #233f87;
+	color: #FFF;
+	border: 1px solid #233f87;
 	transition: all 0.3s ease;
+}
+
+div.one-presenter{
+	background-color: #f8f8f8;
+	min-height: 300px;
+}
+
+.pres-info, .pres-photo{
+	padding: 20px;
+}
+
+/* BOOTSTRAP HACKS
+============================== */
+
+.presenters-block .img-circle{
+	border: 5px solid #F0F2F7;
 }
