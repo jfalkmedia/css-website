@@ -19,12 +19,13 @@ h1, h2{
 ========================= */
 
 footer,
+footer a,
 .footer-nav li a,
 .footer-nav a,
 .contact-block a {
 	color: rgba(255,255,255,0.9);
 }
-.contact-block a:hover{
+footer a:hover, .contact-block a:hover{
 	color: #fff;
 }
 
